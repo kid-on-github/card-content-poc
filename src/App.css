@@ -1,0 +1,47 @@
+.App{
+  /* overflow: hidden; */
+}
+
+.Card {
+  padding: 50px;
+  background: white;
+  border-radius: 20px;
+  height: calc(100vh - 60px);
+  margin: 30px 0;
+  width: 800px;
+  box-shadow: 0px 4px 20px rgba(200, 200, 200, 0.25);
+  position: absolute;
+  transition: left .3s ease-in-out;
+}
+
+.Card > .buttonWrapper{
+  width: calc(100% - 100px);
+  position: absolute;
+  bottom: 40px;
+}
+
+.Card > .buttonWrapper > button:nth-child(2){
+  float: right
+}
+
+button {
+  background-color: #5352ED;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 16px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  min-width: 120px;
+  text-align: center;
+}
+
+button:disabled{
+  opacity: 50%;
+  cursor: default;
+}
+
+.CardWrapper {
+  position: absolute;
+  right: calc(800px - 20px);
+}
